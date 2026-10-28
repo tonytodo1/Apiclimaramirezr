@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clima Perú 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+  <header>
+    <h1 class="text-center text-danger">NUESTRO CLIMA PERÙ</h1>
+    <div class="container">
+    <p>Aqui veremos nuestros diferentes climas en las ciudades de Perú.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="buscador">
+
+      <select id="selectorCiudad" class="form-control my-5">
+           <option value="lima">Lima</option>   
+           <option value="cusco">Cusco</option>
+           <option value="arequipa">Arequipa</option>
+           <option value="trujillo">Trujillo</option>  
+           <option value="piura">Piura</option> 
+           <option value="iquitos">Iquitos</option> 
+           <option value="puno">Puno</option> 
+           <option value="huancayo">Huancayo</option>        
+      </select>
+
+
+      <button id="btnConsultar" class="form-control bg-dark text-white w-50 d-block m-auto">VER CLIMA</button>                      
+
+    </section>
+
+        
+    <p  id="mensajeError" class="error"></p>
+
+
+    <section  id="resultado" class="card my-5" >
+
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="appcomplemento.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
